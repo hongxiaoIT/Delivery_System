@@ -1,0 +1,9 @@
+info: &userInfo
+ username: xiaohong
+ password: "1232312"
+
+testCase1:
+  detail:
+  data:
+    <<: *userInfo
+    tel: "1232323213213"

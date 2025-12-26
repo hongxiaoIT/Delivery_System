@@ -1,0 +1,14 @@
+Login: #登录模块
+  login: #登录接口
+    url: "/account/sLogin"
+    method: "POST"
+Shop: #店铺模块
+  query: #列出店铺
+    url: "/shopping/myShop"
+    method: "GET"
+  file_upload: #图片上传
+    url: "/file"
+    method: "POST"
+  update: #修改店铺
+    url: "/shopping/updatemyshop"
+    method: "POST"
