@@ -33,7 +33,7 @@ class TestShop(ApiAssert):
     def test_shop_update(self,title,inBody,expData,shop_init):
 
         with allure.step('1、需要店铺实例'):
-            print("获取店铺实例")
+            pass
         with allure.step('2、获取shopId'):
             shopId = shop_init.query({"page": 1, "limit": 20})['data']['records']['0']['id']
         with allure.step('3、图片上传接口上传图片'):
