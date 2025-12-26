@@ -26,5 +26,6 @@ class TestLogin(ApiAssert):
 
 if __name__ == '__main__':
     #--clean-alluredir用来清除报告的历史数据
+    #需要接入到自动化集成项目里面
     pytest.main([__file__,'-s','--alluredir',report_path,'--clean-alluredir'])
     os.system(f'allure server{report_path}')
