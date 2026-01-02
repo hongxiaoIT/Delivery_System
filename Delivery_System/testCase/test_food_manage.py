@@ -1,12 +1,12 @@
 import pytest
 from utils.handle_excel import get_excel_data
 import allure
-from common.baseApi import BaseAssert
+from common.baseApi import ApiAssert
 
 @pytest.mark.food  # 增加标签 mark
 @allure.epic('订餐系统')
 @allure.feature('食品模块')  # 测试类
-class TestFoodManage(BaseAssert):
+class TestFoodManage(ApiAssert):
     # 1- 添加食品种类
     @allure.story('添加食品种类')  # 接口的名称
     @allure.title('添加食品种类用例')  # 用例的标题
